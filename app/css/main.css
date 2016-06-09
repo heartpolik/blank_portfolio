@@ -1,0 +1,160 @@
+html{
+    height: 100%;
+    
+}
+body{
+    height: 100%;
+    background: url(../img/pattern.png) repeat;
+    font: normal 1em 'fira_sanslight';
+    color: #4a545d;
+}
+/* stick footer to floor*/
+.wrapper{
+    position: relative;
+    min-height: 100%;
+    min-width: 970px;
+    height: auto;
+    /*overflow: hidden;*/
+}
+.wrapper:after{
+    content: "";
+    height: 80px;
+    display: block;
+}
+.page-footer{
+    min-width: 970px;
+    height: 80px;
+    margin-top: -80px;
+}
+
+/*endof nail footer*/
+
+/*header*/
+.container-big{
+    max-width: 1200px;
+    min-width: 960px;
+    height: 100%;
+    position: relative;
+}
+.page-header{
+    height: 119px;
+    background: #eff3f7;
+    position: relative;
+    margin-bottom: 39px;
+}
+.page-header .header-logo-link{
+    position: absolute;
+    top: 39px;
+    left: 10;
+}
+.page-header .header-logo-text{
+    position: absolute;
+    left: -9999px;
+}
+.page-header .socials{
+    position: absolute;
+    right: 0;
+    top: 36px;
+}
+
+/*icons*/
+
+.socials{
+    margin: 0;
+    padding: 0;
+    min-width: 260px;
+}
+.socials .socials-item{
+    list-style: none;
+    display: inline-block;
+    height: 47px;
+    width: 47px;
+    margin-left: 19px;
+}
+.socials .socials-item:first-child{
+    margin-left: 0;
+}
+.socials .socials-link{
+    display: block;
+    height: 100%;
+    width: 100%;
+    font-size: 2.4em;
+    text-decoration: none;
+    color: rgba(112, 0, 255, 0.4);
+}
+.socials .socials-link:hover{
+    color: rgba(112, 0, 255, 1);
+}
+/* footer*/
+
+.page-footer{
+    background: #eff3f7;
+    font-family: 'fira-sanslight';
+    color: #4a545d;
+}
+.page-footer .container{
+    padding-top: 23px;
+    position: relative;
+}
+.page-footer .copyright{
+    margin: 0 180px;
+    padding-top: 7px;
+    text-align: center;
+    font-size: 13px;
+}
+
+/*login*/
+.page-footer .lock{
+    position: absolute;
+    top: 26px;
+    left: 20px;
+}
+.lock-inner{
+    display: block;
+    height: 40px;
+    font-family: 'fira_sansbook';
+    font-size: 12px;
+    line-height: 2.2;
+    color: #4a545d;
+    text-decoration: none;
+    margin-left: 20px;
+    padding-bottom: 20px;
+   
+}
+.lock{
+    background: url(../img/lock-close.png) no-repeat;
+}
+.lock:hover{
+    text-decoration: underline;
+    background: url(../img/lock-open.png) no-repeat;
+}
+.lock-inner:hover{
+    text-decoration: underline;
+}
+
+/* endof login */
+/*endof  footer*/
+
+
+/*common classes*/
+.container{
+    width: 960px;
+    margin: 0 auto;
+}
+.text-center{
+    text-align: center;
+}
+.pull-left{
+    float: left;
+}
+.pull-right{
+    float: right;
+}
+/*clearfix*/
+.container:before, .clearfix:before, .container:after, .clearfix:after{
+    content: " "; /*  1 */
+    display: table; /* 2 */
+}
+.container:after, clearfix:after{
+    clear: both;
+}
