@@ -45,7 +45,7 @@ body{
 .page-header .header-logo-link{
     position: absolute;
     top: 39px;
-    left: 10;
+    left: 10px;
 }
 .page-header .header-logo-text{
     position: absolute;
@@ -58,6 +58,41 @@ body{
 }
 
 /*icons*/
+.socials-link{
+
+    border-radius: 2.9rem;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 2.0rem;
+    height: 2.9rem;
+    line-height: 2.9rem;
+    margin: 0 5px;
+    position: relative;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 2.9rem;
+}
+
+
+.socials-link i {
+    text-align: center;
+    background: none;
+    color: rgba(112, 0, 255, 0.4);
+    height: 3.0rem;
+    left: 0;
+    line-height: 3.0rem;
+    position: absolute;
+    top: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    width: 3.0rem;
+    z-index: 10;
+}
 
 .socials{
     margin: 0;
@@ -70,9 +105,20 @@ body{
     height: 47px;
     width: 47px;
     margin-left: 19px;
+    margin-bottom: auto;
 }
 .socials .socials-item:first-child{
     margin-left: 0;
+}
+
+.socials-link:hover .icon-ln{
+    color: #0077b5;
+}
+.socials-link:hover .icon-fb{
+    color: #3b5998;
+}
+.socials-link:hover .icon-git {
+    color: #181717;
 }
 .socials .socials-link{
     display: block;
@@ -80,11 +126,8 @@ body{
     width: 100%;
     font-size: 2.4em;
     text-decoration: none;
-    color: rgba(112, 0, 255, 0.4);
 }
-.socials .socials-link:hover{
-    color: rgba(112, 0, 255, 1);
-}
+
 /* footer*/
 
 .page-footer{
@@ -107,34 +150,26 @@ body{
 .page-footer .lock{
     position: absolute;
     top: 26px;
-    left: 20px;
+    left: 10px;
 }
 .lock-inner{
-    display: block;
-    height: 40px;
-    font-family: 'fira_sansbook';
-    font-size: 12px;
-    line-height: 2.2;
-    color: #4a545d;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
     text-decoration: none;
-    margin-left: 20px;
-    padding-bottom: 20px;
+    font-size: 1.8em;
    
 }
-.lock{
-    background: url(../img/lock-close.png) no-repeat;
+.icon-unlock{
+    color: rgba(50, 170, 50, 0.3);
+    display: inline-block;
 }
-.lock:hover{
-    text-decoration: underline;
-    background: url(../img/lock-open.png) no-repeat;
+.icon-unlock:hover{
+    color: rgba(50, 170, 50, 1.0);
+    transform: scale(1.5,1.5);
 }
-.lock-inner:hover{
-    text-decoration: underline;
-}
-
 /* endof login */
 /*endof  footer*/
-
 
 /*common classes*/
 .container{
