@@ -1,10 +1,10 @@
 html{
     height: 100%;
-    
 }
+
 body{
     height: 100%;
-    background: url(../img/pattern.png) repeat;
+    background: url(../img/bg.jpg) repeat;
     font: normal 1em 'fira_sanslight';
     color: #4a545d;
 }
@@ -16,11 +16,13 @@ body{
     height: auto;
     /*overflow: hidden;*/
 }
+
 .wrapper:after{
     content: "";
     height: 80px;
     display: block;
 }
+
 .page-footer{
     min-width: 970px;
     height: 80px;
@@ -31,7 +33,7 @@ body{
 
 /*header*/
 .container-big{
-    max-width: 1200px;
+    /*max-width: 1200px;*/
     min-width: 960px;
     height: 100%;
     position: relative;
@@ -45,13 +47,14 @@ body{
 .page-header .header-logo-link{
     position: absolute;
     top: 39px;
-    left: 10px;
+    left: 20px;
 }
 .page-header .header-logo-text{
     position: absolute;
     left: -9999px;
 }
 .page-header .socials{
+    float: right;
     position: absolute;
     right: 0;
     top: 36px;
@@ -66,7 +69,7 @@ body{
     font-size: 2.0rem;
     height: 2.9rem;
     line-height: 2.9rem;
-    margin: 0 5px;
+    /*margin: 0 5px;*/
     position: relative;
     text-align: center;
     -webkit-user-select: none;
@@ -97,13 +100,13 @@ body{
 .socials{
     margin: 0;
     padding: 0;
-    min-width: 260px;
+    min-width: 200px;
 }
 .socials .socials-item{
     list-style: none;
     display: inline-block;
-    height: 47px;
-    width: 47px;
+    height: 40px;
+    width: 40px;
     margin-left: 19px;
     margin-bottom: auto;
 }
@@ -126,6 +129,70 @@ body{
     width: 100%;
     font-size: 2.4em;
     text-decoration: none;
+}
+/*endof socials*/
+/*sidebar*/
+.sidebar{
+    width:250px;
+    float: left;
+}
+
+
+/*navigation*/
+
+.navigation{
+    overflow: hidden;
+    background: #eff3f7;
+    border-radius: 4px;
+    margin-bottom: 26px;
+}
+
+.navigation .navigation-list{
+    list-style:none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation .navigation-item{
+    border-top: 2px solid #3ba8c0;
+}
+.navigation .navigation-item:first-child{
+    border-top: none;
+}
+/*navigation current item*/
+.navigation .navigation-item.current{
+    background: #3ba8c0;
+    margin: 0;
+    border-bottom: none;
+    padding-left: 11px;
+    margin-bottom: -2px; /*hack*/
+}
+
+.navigation .navigation-item.current .navigation-link{
+    color:#f9fafb;
+    font-size:22px;
+}
+/*navigation endof current item*/
+.navigation .navigation-link{
+    font-family: fira_sansbook;
+    display: block;
+    font-size: 20px;
+    text-decoration: none;
+    color: #959aa8;
+    margin-left: 16px;
+    padding: 20px 0px;
+}
+
+.navigation .navigation-link:hover{
+    color:#3ba8c0;
+}
+
+/*navigatione - end*/
+
+/*main region*/
+.variable-content{
+    width: 650px;
+    float: right;
 }
 
 /* footer*/
@@ -190,6 +257,6 @@ body{
     content: " "; /*  1 */
     display: table; /* 2 */
 }
-.container:after, clearfix:after{
+.container:after, .clearfix:after{
     clear: both;
 }

@@ -1,3 +1,3 @@
-$(document).ready(function(){
-    console.log('i`m working here!')
+$(document).ready(function () {
+    console.log('i`m working here!');
 });
